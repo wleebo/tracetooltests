@@ -8,6 +8,7 @@
 #include <sys/syscall.h>
 #include <linux/unistd.h>
 #include <time.h>
+#include <cstdint>
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,6 +16,8 @@
 #include <vector>
 #include <string>
 #include <stdint.h>
+
+typedef uint8_t uint_fast8_t;
 
 /// Implement support for naming threads, missing from c++11
 void set_thread_name(const char* name);
